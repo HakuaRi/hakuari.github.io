@@ -1,0 +1,273 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>柏秋裡的世界 | 柏秋裡的世界</title><meta name="author" content="HakuaRi"><meta name="copyright" content="HakuaRi"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="微积分测试卷一、单项选择题（每题3分，共30分） 极限$\lim_{x \to \infty}(1 + \frac{1}{x})^{2x}$的值为（  ）A. $e$  B. $e^2$  C. $2e$  D. $1$ 若函数$f(x)=\begin{cases}x^2 + 1, &amp;amp;..."><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://organxy.com/museum/advanceMath/%E5%BE%AE%E7%A7%AF%E5%88%86%E6%B5%8B%E8%AF%95%E5%8D%B7.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.3"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'undefined')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'undefined')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: HakuaRi","link":"链接: ","source":"来源: 柏秋裡的世界","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'null',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#4C4948","bgDark":"#121212","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: true,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '柏秋裡的世界',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'page'
+}</script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/css/main.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="柏秋裡的世界" type="application/atom+xml">
+</head><body><div class="bg-animation" id="web_bg" style="background-image: url(/url(/img/b.png));"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/head_portrait.jpg" onerror="this.onerror=null;this.src='/null'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://lab.organxy.com/"><i class="fa-fw fas fa-flask"></i><span> 循析青然</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://organxy-synapse.notion.site/27dd22f057fe800f9a0dd1edd2516cd7"><i class="fa-fw fas fa-brain"></i><span> 青荧</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-coffee"></i><span> 周边</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/museum/"><i class="fa-fw fas fa-museum"></i><span> 博物馆</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 我的名字</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://tool.organxy.com/"><i class="fa-fw fas fa-wrench"></i><span> 小工具</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">柏秋裡的世界</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://lab.organxy.com/"><i class="fa-fw fas fa-flask"></i><span> 循析青然</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://organxy-synapse.notion.site/27dd22f057fe800f9a0dd1edd2516cd7"><i class="fa-fw fas fa-brain"></i><span> 青荧</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-coffee"></i><span> 周边</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/museum/"><i class="fa-fw fas fa-museum"></i><span> 博物馆</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 我的名字</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://tool.organxy.com/"><i class="fa-fw fas fa-wrench"></i><span> 小工具</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title"></h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container"><h1 id="微积分测试卷"><a href="#微积分测试卷" class="headerlink" title="微积分测试卷"></a>微积分测试卷</h1><h2 id="一、单项选择题（每题3分，共30分）"><a href="#一、单项选择题（每题3分，共30分）" class="headerlink" title="一、单项选择题（每题3分，共30分）"></a>一、单项选择题（每题3分，共30分）</h2><ol>
+<li>极限$\lim_{x \to \infty}(1 + \frac{1}{x})^{2x}$的值为（  ）<br>A. $e$  B. $e^2$  C. $2e$  D. $1$</li>
+<li>若函数$f(x)=\begin{cases}x^2 + 1, &amp; x \neq 0 \ 1, &amp; x = 0\end{cases}$，则$\lim_{x \to 0}f(x)$等于（  ）<br>A. 0   B. 1   C. 不存在  D. 2</li>
+<li>函数$y = \ln(x^2 - 1)$的定义域是（  ）<br>A. $(-\infty, -1) \cup (1, +\infty)$  B. $(-1, 1)$  C. $(0, +\infty)$  D. $(-\infty, 0)$</li>
+<li>已知曲线$y = x^3 - 3x$，则其在点$(1, -2)$处的切线斜率为（  ）<br>A. 0  B. -2  C. 3  D. -3</li>
+<li>函数$y = \sin^2 x$的导数为（  ）<br>A. $2\sin x$  B. $\sin 2x$  C. $2\cos x$  D. $\cos 2x$</li>
+<li>设函数$y = e^{2x}$，则$dy$等于（  ）<br>A. $e^{2x}dx$  B. $2e^{2x}dx$  C. $2e^{2x}$  D. $e^{2x}$</li>
+<li>不定积分$\int \frac{1}{\sqrt{1 - x^2}}dx$等于（  ）<br>A. $\arcsin x + C$  B. $-\arccos x + C$  C. $\arctan x + C$  D. $-\arccot x + C$</li>
+<li>定积分$\int_{1}^{e}\frac{1}{x}dx$的值为（  ）<br>A. 0  B. 1  C. $e$  D. $e - 1$</li>
+<li>下列微分方程中，是一阶线性微分方程的是（  ）<br>A. $y’ + y^2 = x$  B. $y’ + xy = \sin x$  C. $y’’ + y = 0$  D. $(y’)^2 + y = e^x$</li>
+<li>函数$z = xy$在点$(2, 3)$处的全微分$dz$为（  ）<br>A. $2dx + 3dy$  B. $3dx + 2dy$  C. $6dx + 6dy$  D. $5dx + 5dy$</li>
+</ol>
+<h2 id="二、填空题（每题3分，共15分）"><a href="#二、填空题（每题3分，共15分）" class="headerlink" title="二、填空题（每题3分，共15分）"></a>二、填空题（每题3分，共15分）</h2><ol>
+<li>极限$\lim_{x \to 0} \frac{\tan 2x}{3x} =$______。</li>
+<li>函数$y = e^x - x$的极小值点为______。</li>
+<li>定积分$\int_{0}^{\frac{\pi}{2}}\cos xdx =$______。</li>
+<li>已知函数$z = \ln(x + y)$，则$\frac{\partial z}{\partial x} =$______。</li>
+<li>二重积分$\iint_{D}(x + y)d\sigma$（其中$D$为矩形区域：$0\leq x\leq 1$，$0\leq y\leq 2$）的值为______。</li>
+</ol>
+<h2 id="三、解答题（共55分）"><a href="#三、解答题（共55分）" class="headerlink" title="三、解答题（共55分）"></a>三、解答题（共55分）</h2><ol>
+<li>（5分）求极限$\lim_{x \to 0} \frac{(1 + x)^5 - 1}{x}$。</li>
+<li>（10分）求函数$y = \frac{x^3}{3} - x^2 + 2$的凹凸区间和拐点。</li>
+<li>（10分）计算不定积分$\int x e^x dx$。</li>
+<li>（10分）计算定积分$\int_{-1}^{1}(x^2 + 1)dx$。</li>
+<li>（10分）求微分方程$xy’ - y = x^2\ln x$的通解。</li>
+<li>（10分）设函数$z = f(x, y) = x^3y^2$，求$\frac{\partial^2 z}{\partial x^2}$，$\frac{\partial^2 z}{\partial y^2}$，$\frac{\partial^2 z}{\partial x\partial y}$在点$(1, 2)$处的值。</li>
+</ol>
+<h3 id="参考答案"><a href="#参考答案" class="headerlink" title="参考答案"></a>参考答案</h3><h4 id="一、单项选择题"><a href="#一、单项选择题" class="headerlink" title="一、单项选择题"></a>一、单项选择题</h4><ol>
+<li>B   2. B   3. A   4. A   5. B   6. B   7. A   8. B   9. B   10. B<h4 id="二、填空题"><a href="#二、填空题" class="headerlink" title="二、填空题"></a>二、填空题</h4></li>
+<li>$\frac{2}{3}$   2. $x = 0$   3. 1   4. $\frac{1}{x + y}$   5. 3<h4 id="三、解答题"><a href="#三、解答题" class="headerlink" title="三、解答题"></a>三、解答题</h4></li>
+<li>解：利用等价无穷小替换，当$x \to 0$时，$(1 + x)^5 - 1\sim 5x$，则原式$=\lim_{x \to 0} \frac{5x}{x}=5$。</li>
+<li>解：<ul>
+<li>先求一阶导数$y’ = x^2 - 2x$，再求二阶导数$y’’ = 2x - 2$。</li>
+<li>令$y’’ = 0$，解得$x = 1$。</li>
+<li>当$x \lt 1$时，$y’’ \lt 0$，函数为凸函数，凸区间为$(-\infty, 1)$；当$x \gt 1$时，$y’’ \gt 0$，函数为凹函数，凹区间为$(1, +\infty)$。</li>
+<li>拐点为$(1,\frac{4}{3})$。</li>
+</ul>
+</li>
+<li>解：利用分部积分法，设$u = x$，$dv = e^x dx$，则$du = dx$，$v = e^x$，原式$=x e^x - \int e^x dx = x e^x - e^x + C$。</li>
+<li>解：$\int_{-1}^{1}(x^2 + 1)dx = (\frac{1}{3}x^3 + x)\big|_{-1}^{1}=(\frac{1}{3}+1)-(-\frac{1}{3}-1)=\frac{8}{3}$。</li>
+<li>解：<ul>
+<li>原方程变形为$y’ - \frac{y}{x} = x\ln x$，这是一阶线性微分方程。</li>
+<li>先求对应的齐次方程$y’ - \frac{y}{x} = 0$的通解，其通解为$y = Cx$。</li>
+<li>设原方程的特解为$y^* = x(Ax + B)\ln x$，代入原方程可得$A=\frac{1}{2}$，$B = 0$，特解为$y^*=\frac{1}{2}x^2\ln x$。</li>
+<li>所以原方程通解为$y = Cx+\frac{1}{2}x^2\ln x$。</li>
+</ul>
+</li>
+<li>解：<ul>
+<li>先求$\frac{\partial z}{\partial x}=3x^2y^2$，则$\frac{\partial^2 z}{\partial x^2}=6xy^2$，在点$(1, 2)$处，$\frac{\partial^2 z}{\partial x^2}\big|_{(1,2)}=6\times1\times2^2 = 24$。</li>
+<li>再求$\frac{\partial z}{\partial y}=2x^3y$，则$\frac{\partial^2 z}{\partial y^2}=2x^3$，在点$(1, 2)$处，$\frac{\partial^2 z}{\partial y^2}\big|_{(1,2)}=2\times1^3 = 2$。</li>
+<li>又$\frac{\partial^2 z}{\partial x\partial y}=6x^2y$，在点$(1, 2)$处，$\frac{\partial^2 z}{\partial x\partial y}\big|_{(1,2)}=6\times1^2\times2 = 12$。</li>
+</ul>
+</li>
+</ol>
+</div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/head_portrait.jpg" onerror="this.onerror=null;this.src='/null'" alt="avatar"/></div><div class="author-info-name">HakuaRi</div><div class="author-info-description">没什么说的</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Virtual-NeutroN/"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">五年了，相遇到散伙。感慨万千。大家有什么意见或建议，欢迎前往 https://space.bilibili.com/313758599/ 私信轰炸我</div></div><div class="sticky_layout"><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">9</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">5.9k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-12-22T13:13:09.766Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2020 - 2025 By HakuaRi</span></div><div class="footer_custom_text">感谢Hakon Wium Lie(维姆莱)和Bert Bos(伯特·波斯)，感谢Brendan Eich(布兰登·艾奇)，感谢Tim Berners-Lee(蒂姆·伯纳斯·李)和Daniel W.Connolly，如果没有他们，我怎么会站在这里！最后为大家带来一首我的成名曲《热爱100000005℃的你》，希望大家喜欢！</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.3"></script><script src="/js/main.js?v=5.5.3"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"></div><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/metingjs/dist/Meting.min.js"></script><script>(() => {
+  const destroyAplayer = () => {
+    if (window.aplayers) {
+      for (let i = 0; i < window.aplayers.length; i++) {
+        if (!window.aplayers[i].options.fixed) {
+          window.aplayers[i].destroy()
+        }
+      }
+    }
+  }
+
+  const runMetingJS = () => {
+    typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+  }
+
+  btf.addGlobalFn('pjaxSend', destroyAplayer, 'destroyAplayer')
+  btf.addGlobalFn('pjaxComplete', loadMeting, 'runMetingJS')
+})()</script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js" defer="defer"></script><script>document.addEventListener('DOMContentLoaded', () => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => {
+      try {
+        fn()
+      } catch (err) {
+        console.debug('Pjax callback failed:', err)
+      }
+    })
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      false
+        ? pjax.loadUrl('/404.html')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>function history_calendar_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>那年今日</span></div><div id="history-baidu" style="height: 100px;overflow: hidden"><div class="history_swiper-container" id="history-container" style="width: 100%;height: 100%"><div class="swiper-wrapper" id="history_container_wrapper" style="height:20px"></div></div></div></div>';
+                console.log('已挂载history_calendar')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='all'|| 'all' ==='all')){
+
+            history_calendar_injector_config()
+        } </script><script data-pjax  src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script><script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/js/main.js"></script><!-- hexo injector body_end end --></body></html>
