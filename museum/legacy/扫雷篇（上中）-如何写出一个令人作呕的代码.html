@@ -1,4 +1,16 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>扫雷篇（上中）-如何写出一个令人作呕的代码 | 柏秋裡的世界</title><meta name="author" content="HakuaRi"><meta name="copyright" content="HakuaRi"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="多图警告⚠，其中 center 标签已被弃用，部分浏览器可能会无效！如果无法使用，详见下方css目录   各位早上中午下午傍晚晚上半夜凌晨好啊，我自从开设这个网站以来，都还没敲过代码，那我今天就试一下能不能写出一篇雅俗共赏（草）的文章。好了废话说多点，这样*（@￥&amp;amp;（#&amp;amp;……￥..."><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://organxy.com/museum/legacy/%E6%89%AB%E9%9B%B7%E7%AF%87%EF%BC%88%E4%B8%8A%E4%B8%AD%EF%BC%89-%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E4%B8%80%E4%B8%AA%E4%BB%A4%E4%BA%BA%E4%BD%9C%E5%91%95%E7%9A%84%E4%BB%A3%E7%A0%81.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.3"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>扫雷篇（上中）-如何写出一个令人作呕的代码 | 柏秋裡的蓝图纸</title><meta name="author" content="HakuaRi"><meta name="copyright" content="HakuaRi"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="多图警告⚠，其中 center 标签已被弃用，部分浏览器可能会无效！如果无法使用，详见下方css目录   各位早上中午下午傍晚晚上半夜凌晨好啊，我自从开设这个网站以来，都还没敲过代码，那我今天就试一下能不能写出一篇雅俗共赏（草）的文章。好了废话说多点，这样*（@￥&amp;（#&amp;……￥（3  先搞个html，搭建一个初始地图我们选择9x9的“初级地图”，因为操作起来简单一些 贴图但是再此之">
+<meta property="og:type" content="website">
+<meta property="og:title" content="扫雷篇（上中）-如何写出一个令人作呕的代码">
+<meta property="og:url" content="https://organxy.com/museum/legacy/%E6%89%AB%E9%9B%B7%E7%AF%87%EF%BC%88%E4%B8%8A%E4%B8%AD%EF%BC%89-%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E4%B8%80%E4%B8%AA%E4%BB%A4%E4%BA%BA%E4%BD%9C%E5%91%95%E7%9A%84%E4%BB%A3%E7%A0%81.html">
+<meta property="og:site_name" content="柏秋裡的蓝图纸">
+<meta property="og:description" content="多图警告⚠，其中 center 标签已被弃用，部分浏览器可能会无效！如果无法使用，详见下方css目录   各位早上中午下午傍晚晚上半夜凌晨好啊，我自从开设这个网站以来，都还没敲过代码，那我今天就试一下能不能写出一篇雅俗共赏（草）的文章。好了废话说多点，这样*（@￥&amp;（#&amp;……￥（3  先搞个html，搭建一个初始地图我们选择9x9的“初级地图”，因为操作起来简单一些 贴图但是再此之">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://organxy.com/img/avatar.jpg">
+<meta property="article:published_time" content="2021-07-17T02:14:07.000Z">
+<meta property="article:modified_time" content="2022-08-18T09:34:37.000Z">
+<meta property="article:author" content="HakuaRi">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://organxy.com/img/avatar.jpg"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://organxy.com/museum/legacy/%E6%89%AB%E9%9B%B7%E7%AF%87%EF%BC%88%E4%B8%8A%E4%B8%AD%EF%BC%89-%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E4%B8%80%E4%B8%AA%E4%BB%A4%E4%BA%BA%E4%BD%9C%E5%91%95%E7%9A%84%E4%BB%A3%E7%A0%81.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.3"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
     (() => {
       
     const saveToLocal = {
@@ -44,7 +56,7 @@
         document.head.appendChild(link)
       }),
       addGlobalFn: (key, fn, name = false, parent = window) => {
-        if (!true && key.startsWith('pjax')) return
+        if (!false && key.startsWith('pjax')) return
         const globalFn = parent.globalFn || {}
         globalFn[key] = globalFn[key] || {}
         globalFn[key][name || Object.keys(globalFn[key]).length] = fn
@@ -111,14 +123,14 @@
     day: '天前',
     month: '个月前'
   },
-  copyright: {"limitCount":50,"languages":{"author":"作者: HakuaRi","link":"链接: ","source":"来源: 柏秋裡的世界","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  copyright: undefined,
   lightbox: 'null',
-  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#4C4948","bgDark":"#121212","position":"bottom-left"},
+  Snackbar: undefined,
   infinitegrid: {
     js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
     buttonText: '加载更多'
   },
-  isPhotoFigcaption: true,
+  isPhotoFigcaption: false,
   islazyloadPlugin: false,
   isAnchor: false,
   percent: {
@@ -131,15 +143,15 @@
   isHighlightShrink: false,
   isToc: false,
   pageType: 'page'
-}</script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/css/main.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="柏秋裡的世界" type="application/atom+xml">
-</head><body><div class="bg-animation" id="web_bg" style="background-image: url(/url(/img/b.png));"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/head_portrait.jpg" onerror="this.onerror=null;this.src='/null'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://lab.organxy.com/"><i class="fa-fw fas fa-flask"></i><span> 循析青然</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://organxy-synapse.notion.site/27dd22f057fe800f9a0dd1edd2516cd7"><i class="fa-fw fas fa-brain"></i><span> 青荧</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-coffee"></i><span> 周边</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/museum/"><i class="fa-fw fas fa-museum"></i><span> 博物馆</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 我的名字</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://tool.organxy.com/"><i class="fa-fw fas fa-wrench"></i><span> 小工具</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url(/img/20210717/1.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">柏秋裡的世界</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://lab.organxy.com/"><i class="fa-fw fas fa-flask"></i><span> 循析青然</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://organxy-synapse.notion.site/27dd22f057fe800f9a0dd1edd2516cd7"><i class="fa-fw fas fa-brain"></i><span> 青荧</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-coffee"></i><span> 周边</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/museum/"><i class="fa-fw fas fa-museum"></i><span> 博物馆</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 我的名字</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://tool.organxy.com/"><i class="fa-fw fas fa-wrench"></i><span> 小工具</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">扫雷篇（上中）-如何写出一个令人作呕的代码</h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container"><div class="note warning simple"><p>多图警告⚠，其中 center 标签已被弃用，部分浏览器可能会无效！如果无法使用，详见下方css目录</p>
+}</script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/css/main.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="柏秋裡的蓝图纸" type="application/atom+xml">
+</head><body><div class="bg-animation" id="web_bg" style="background-image: url(/img/background.jpeg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://lab.organxy.com/"><i class="fa-fw fas fa-flask"></i><span> 循析青然</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://lab.organxy.com/notes/"><i class="fa-fw fas fa-brain"></i><span> 青荧</span></a></div><div class="menus_item"><a class="site-page" href="/4kdan/"><span> 4k</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-coffee"></i><span> 周边</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/museum/"><i class="fa-fw fas fa-museum"></i><span> 博物馆</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 我的名字</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://tool.organxy.com/"><i class="fa-fw fas fa-wrench"></i><span> 小工具</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url(/img/20210717/1.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">柏秋裡的蓝图纸</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://lab.organxy.com/"><i class="fa-fw fas fa-flask"></i><span> 循析青然</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://lab.organxy.com/notes/"><i class="fa-fw fas fa-brain"></i><span> 青荧</span></a></div><div class="menus_item"><a class="site-page" href="/4kdan/"><span> 4k</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-coffee"></i><span> 周边</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/museum/"><i class="fa-fw fas fa-museum"></i><span> 博物馆</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 我的名字</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://tool.organxy.com/"><i class="fa-fw fas fa-wrench"></i><span> 小工具</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">扫雷篇（上中）-如何写出一个令人作呕的代码</h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container"><div class="note warning flat"><p>多图警告⚠，其中 center 标签已被弃用，部分浏览器可能会无效！如果无法使用，详见下方css目录</p>
 </div>
 
 <p>各位早上中午下午傍晚晚上半夜凌晨好啊，我自从开设这个网站以来，都还没敲过代码，那我今天就试一下能不能写出一篇雅俗共赏（草）的文章。<br>好了废话说多点，这样*（@￥&amp;<em>（#&amp;……￥</em>（3</p>
 <hr>
 <h1 id="先搞个html，搭建一个初始地图"><a href="#先搞个html，搭建一个初始地图" class="headerlink" title="先搞个html，搭建一个初始地图"></a>先搞个html，搭建一个初始地图</h1><p>我们选择9x9的“初级地图”，因为操作起来简单一些</p>
 <h2 id="贴图"><a href="#贴图" class="headerlink" title="贴图"></a>贴图</h2><p>但是再此之前，我们要把贴图画出来，这里我画了，在下方：</p>
-<div class="note info simple"><p>每个贴图大小都是100px × 100px</p>
+<div class="note info flat"><p>每个贴图大小都是100px × 100px</p>
 </div>
 
 <div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">
@@ -235,83 +247,82 @@
 这些东西要自己动手才会懂！这些我也是自己一次次写出来的，自己实践还能加深印象，多好！
 
 <hr>
-<div class="note success simple"><p>恭喜！对于扫雷游戏的初始配置已经完成，下一期！写出一个被解雇的代码！🤮</p>
-</div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/head_portrait.jpg" onerror="this.onerror=null;this.src='/null'" alt="avatar"/></div><div class="author-info-name">HakuaRi</div><div class="author-info-description">没什么说的</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Virtual-NeutroN/"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">五年了，相遇到散伙。感慨万千。大家有什么意见或建议，欢迎前往 https://space.bilibili.com/313758599/ 私信轰炸我</div></div><div class="sticky_layout"><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">9</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">5.9k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-12-22T13:13:09.766Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2020 - 2025 By HakuaRi</span></div><div class="footer_custom_text">感谢Hakon Wium Lie(维姆莱)和Bert Bos(伯特·波斯)，感谢Brendan Eich(布兰登·艾奇)，感谢Tim Berners-Lee(蒂姆·伯纳斯·李)和Daniel W.Connolly，如果没有他们，我怎么会站在这里！最后为大家带来一首我的成名曲《热爱100000005℃的你》，希望大家喜欢！</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.3"></script><script src="/js/main.js?v=5.5.3"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"></div><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
-POWERMODE.shake = true;
-POWERMODE.mobile = true;
-document.body.addEventListener('input', POWERMODE);
-</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/metingjs/dist/Meting.min.js"></script><script>(() => {
-  const destroyAplayer = () => {
-    if (window.aplayers) {
-      for (let i = 0; i < window.aplayers.length; i++) {
-        if (!window.aplayers[i].options.fixed) {
-          window.aplayers[i].destroy()
+<div class="note success flat"><p>恭喜！对于扫雷游戏的初始配置已经完成，下一期！写出一个被解雇的代码！🤮</p>
+</div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">HakuaRi</div><div class="author-info-description">您好</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Virtual-NeutroN/"><i class="fab fa-github"></i><span>🎣我</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">五年了，相遇到散伙。感慨万千。大家有什么意见或建议，欢迎前往 https://space.bilibili.com/313758599/ 私信轰炸我</div></div><div class="sticky_layout"><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">4</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-08-19T16:31:13.261Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/img/20210717/1.png);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2020 - 2026 By HakuaRi</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 5.4.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.3</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.3"></script><script src="/js/main.js?v=5.5.3"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        loader: {
+          load: [
+            // Four font extension packages (optional)
+            //- '[tex]/bbm',
+            //- '[tex]/bboldx',
+            //- '[tex]/dsfont',
+            '[tex]/mhchem'
+          ],
+          paths: {
+            'mathjax-newcm': '[mathjax]/../@mathjax/mathjax-newcm-font',
+
+            //- // Four font extension packages (optional)
+            //- 'mathjax-bbm-extension': '[mathjax]/../@mathjax/mathjax-bbm-font-extension',
+            //- 'mathjax-bboldx-extension': '[mathjax]/../@mathjax/mathjax-bboldx-font-extension',
+            //- 'mathjax-dsfont-extension': '[mathjax]/../@mathjax/mathjax-dsfont-font-extension',
+            'mathjax-mhchem-extension': '[mathjax]/../@mathjax/mathjax-mhchem-font-extension'
+          }
+        },
+        output: {
+          font: 'mathjax-newcm',
+        },
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+          packages: {
+            '[+]': [
+              'mhchem'
+            ]
+          }
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          menuOptions: {
+            settings: {
+              enrich: false  // Turn off Braille and voice narration text automatic generation
+            }
+          },
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
         }
       }
+
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
     }
   }
 
-  const runMetingJS = () => {
-    typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
-  }
-
-  btf.addGlobalFn('pjaxSend', destroyAplayer, 'destroyAplayer')
-  btf.addGlobalFn('pjaxComplete', loadMeting, 'runMetingJS')
-})()</script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js" defer="defer"></script><script>document.addEventListener('DOMContentLoaded', () => {
-  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
-
-  window.pjax = new Pjax({
-    elements: 'a:not([target="_blank"])',
-    selectors: pjaxSelectors,
-    cacheBust: false,
-    analytics: false,
-    scrollRestoration: false
-  })
-
-  const triggerPjaxFn = (val) => {
-    if (!val) return
-    Object.values(val).forEach(fn => {
-      try {
-        fn()
-      } catch (err) {
-        console.debug('Pjax callback failed:', err)
-      }
-    })
-  }
-
-  document.addEventListener('pjax:send', () => {
-    // removeEventListener
-    btf.removeGlobalFnEvent('pjaxSendOnce')
-    btf.removeGlobalFnEvent('themeChange')
-
-    // reset readmode
-    const $bodyClassList = document.body.classList
-    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
-
-    triggerPjaxFn(window.globalFn.pjaxSend)
-  })
-
-  document.addEventListener('pjax:complete', () => {
-    btf.removeGlobalFnEvent('pjaxCompleteOnce')
-    document.querySelectorAll('script[data-pjax]').forEach(item => {
-      const newScript = document.createElement('script')
-      const content = item.text || item.textContent || item.innerHTML || ""
-      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
-      newScript.appendChild(document.createTextNode(content))
-      item.parentNode.replaceChild(newScript, item)
-    })
-
-    triggerPjaxFn(window.globalFn.pjaxComplete)
-  })
-
-  document.addEventListener('pjax:error', e => {
-    if (e.request.status === 404) {
-      false
-        ? pjax.loadUrl('/404.html')
-        : window.location.href = e.request.responseURL
-    }
-  })
-})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>function history_calendar_injector_config(){
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>function history_calendar_injector_config(){
                 var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
                 var item_html = '<div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>那年今日</span></div><div id="history-baidu" style="height: 100px;overflow: hidden"><div class="history_swiper-container" id="history-container" style="width: 100%;height: 100%"><div class="swiper-wrapper" id="history_container_wrapper" style="height:20px"></div></div></div></div>';
                 console.log('已挂载history_calendar')

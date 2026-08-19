@@ -1,0 +1,270 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>自制段位发布站点 | 柏秋裡的蓝图纸</title><meta name="author" content="HakuaRi"><meta name="copyright" content="HakuaRi"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Terpene Dan 什么是 Terpene Dan？  这是我个人主打练习的dan（以下简称Tp dan），一个dan包含3首歌且键型完全看我的感情（本人强乱弱其他一切）  什么时间发布Tp dan？  看我什么时候写完凑够3个谱   Tp dan难度如何？  与其说是dan，不如说是包。这个dan不是按照难度排的，而是按照发布的次序来   Tp dan对标什么难度？  目前主要参考Malod">
+<meta property="og:type" content="website">
+<meta property="og:title" content="自制段位发布站点">
+<meta property="og:url" content="https://organxy.com/4kdan/index.html">
+<meta property="og:site_name" content="柏秋裡的蓝图纸">
+<meta property="og:description" content="Terpene Dan 什么是 Terpene Dan？  这是我个人主打练习的dan（以下简称Tp dan），一个dan包含3首歌且键型完全看我的感情（本人强乱弱其他一切）  什么时间发布Tp dan？  看我什么时候写完凑够3个谱   Tp dan难度如何？  与其说是dan，不如说是包。这个dan不是按照难度排的，而是按照发布的次序来   Tp dan对标什么难度？  目前主要参考Malod">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://organxy.com/img/avatar.jpg">
+<meta property="article:published_time" content="2026-03-06T16:06:03.000Z">
+<meta property="article:modified_time" content="2026-03-06T16:34:04.600Z">
+<meta property="article:author" content="HakuaRi">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://organxy.com/img/avatar.jpg"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://organxy.com/4kdan/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.3"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'undefined')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'undefined')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '自制段位发布站点',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'page'
+}</script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/css/main.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="柏秋裡的蓝图纸" type="application/atom+xml">
+</head><body><div class="bg-animation" id="web_bg" style="background-image: url(/img/background.jpeg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://lab.organxy.com/"><i class="fa-fw fas fa-flask"></i><span> 循析青然</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://lab.organxy.com/notes/"><i class="fa-fw fas fa-brain"></i><span> 青荧</span></a></div><div class="menus_item"><a class="site-page" href="/4kdan/"><span> 4k</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-coffee"></i><span> 周边</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/museum/"><i class="fa-fw fas fa-museum"></i><span> 博物馆</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 我的名字</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://tool.organxy.com/"><i class="fa-fw fas fa-wrench"></i><span> 小工具</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url(/img/20260307/top_img.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">柏秋裡的蓝图纸</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://lab.organxy.com/"><i class="fa-fw fas fa-flask"></i><span> 循析青然</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://lab.organxy.com/notes/"><i class="fa-fw fas fa-brain"></i><span> 青荧</span></a></div><div class="menus_item"><a class="site-page" href="/4kdan/"><span> 4k</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-coffee"></i><span> 周边</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/museum/"><i class="fa-fw fas fa-museum"></i><span> 博物馆</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 我的名字</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://tool.organxy.com/"><i class="fa-fw fas fa-wrench"></i><span> 小工具</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">自制段位发布站点</h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container"><h1 id="Terpene-Dan"><a href="#Terpene-Dan" class="headerlink" title="Terpene Dan"></a>Terpene Dan</h1><ul>
+<li><p>什么是 Terpene Dan？</p>
+</li>
+<li><p>这是我个人主打练习的dan（以下简称Tp dan），一个dan包含3首歌且键型完全看我的感情（本人强乱弱其他一切）</p>
+</br></li>
+<li><p>什么时间发布Tp dan？</p>
+</li>
+<li><p>看我什么时候写完凑够3个谱</p>
+</br> </li>
+<li><p>Tp dan难度如何？</p>
+</li>
+<li><p>与其说是dan，不如说是包。这个dan不是按照难度排的，而是按照发布的次序来</p>
+</br> </li>
+<li><p>Tp dan对标什么难度？</p>
+</li>
+<li><p>目前主要参考Malody Regular Dan V3 进行，但一般会比这个稍微高个0.2-0.4左右。这是我主观评价</p>
+</br> </li>
+<li><p>过dan标准是？</p>
+</li>
+<li><p>马老弟C判 95%即可。OSU等效找马老弟C，电脑端B判。如果使用1.2x通过，可以获得0元奖励</p>
+</br> </li>
+<li><p>好玩吗？</p>
+</li>
+<li><p>难说，这里除了是练习我的4k，还有练习我的写谱。如果有机会，我会把一些非常实验的铺子发出来</p>
+</br> </li>
+<li><p>有测试吗？</p>
+</li>
+<li><p>没有，都是我自己打。我只要能觉得有人能打就会发，哪怕我没过自己的dan</p>
+</li>
+</ul>
+<hr>
+<p>== == == == ==<br>以下是最新发布<br>== == == == == </p>
+<h2 id="Terpene-Dan-1st-pack-发布"><a href="#Terpene-Dan-1st-pack-发布" class="headerlink" title="Terpene Dan 1st pack 发布"></a>Terpene Dan 1st pack 发布</h2><p><font style="color: red; font-size: 24px">推荐指数：⭐⭐（手感不太好）</font></p>
+<p><img src="/img/20260307/Terdan-1.png"></p>
+<a class="btn-beautify block center larger" href="/4kdan/Terpene%20Dan%20-%201st%20Pack%20(~3.5-4dan)%20(HakuaRi).osz" title="点我下载.osz文件"><i class="far fa-hand-point-right"></i><span>点我下载.osz文件</span></a>
+
+<p>26.3.5，1st 测试性地发布了。包含了三首远古时期的修改谱，分别为Stream，speed，speed(带一点stream)，对应dan大概是3.8-4.0-4.3。<br></br> </p>
+<h3 id="第一首"><a href="#第一首" class="headerlink" title="第一首"></a>第一首</h3><p>这是我很喜欢的一首来自lime的神曲。早些时候写的一个切。但是因为太简单了，所以我改难了。但这导致手感比较诡异。</p>
+<h3 id="第二首"><a href="#第二首" class="headerlink" title="第二首"></a>第二首</h3><p>来自plum的sinkhole。是一个很适合写speed的高速钢琴！之前写的speed没有4，所以给的卡手了一点，然后加强了耐力，和掺杂了更多的切。所以手感非常恶心和烂，我的问题。</p>
+<h3 id="第三首"><a href="#第三首" class="headerlink" title="第三首"></a>第三首</h3><p>同样来自plun的tempest。在冰与火是一个很火的歌曲，疾走钢琴依旧适合speed，不过这个speed更加的综合，同样我也修改加强了耐力。尾杀我改成了对拍，这样可以大幅降低难度，不会出现非常严重的断层。这首歌个人觉得比前两个改的还好，可以稍微玩一下。</p>
+</div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">HakuaRi</div><div class="author-info-description">您好</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Virtual-NeutroN/"><i class="fab fa-github"></i><span>🎣我</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">五年了，相遇到散伙。感慨万千。大家有什么意见或建议，欢迎前往 https://space.bilibili.com/313758599/ 私信轰炸我</div></div><div class="sticky_layout"><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">4</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-08-19T16:31:13.261Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/img/20260307/top_img.jpg);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2020 - 2026 By HakuaRi</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 5.4.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.3</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.3"></script><script src="/js/main.js?v=5.5.3"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        loader: {
+          load: [
+            // Four font extension packages (optional)
+            //- '[tex]/bbm',
+            //- '[tex]/bboldx',
+            //- '[tex]/dsfont',
+            '[tex]/mhchem'
+          ],
+          paths: {
+            'mathjax-newcm': '[mathjax]/../@mathjax/mathjax-newcm-font',
+
+            //- // Four font extension packages (optional)
+            //- 'mathjax-bbm-extension': '[mathjax]/../@mathjax/mathjax-bbm-font-extension',
+            //- 'mathjax-bboldx-extension': '[mathjax]/../@mathjax/mathjax-bboldx-font-extension',
+            //- 'mathjax-dsfont-extension': '[mathjax]/../@mathjax/mathjax-dsfont-font-extension',
+            'mathjax-mhchem-extension': '[mathjax]/../@mathjax/mathjax-mhchem-font-extension'
+          }
+        },
+        output: {
+          font: 'mathjax-newcm',
+        },
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+          packages: {
+            '[+]': [
+              'mhchem'
+            ]
+          }
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          menuOptions: {
+            settings: {
+              enrich: false  // Turn off Braille and voice narration text automatic generation
+            }
+          },
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>function history_calendar_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>那年今日</span></div><div id="history-baidu" style="height: 100px;overflow: hidden"><div class="history_swiper-container" id="history-container" style="width: 100%;height: 100%"><div class="swiper-wrapper" id="history_container_wrapper" style="height:20px"></div></div></div></div>';
+                console.log('已挂载history_calendar')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='all'|| 'all' ==='all')){
+
+            history_calendar_injector_config()
+        } </script><script data-pjax  src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script><script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/js/main.js"></script><!-- hexo injector body_end end --></body></html>
